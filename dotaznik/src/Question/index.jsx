@@ -4,16 +4,16 @@ import Option from '../Option/index';
 import './style.css';
 
 const Question = () => {
-  const [answered, setAnswered] = useState('symbolQuestion');
+  const [answer, setAnswer] = useState('symbolQuestion');
 
   const handleSelect = (iconType) => {
-    setAnswered(iconType);
+    setAnswer(iconType);
   };
 
   return (
     <div className="question">
       <QuestionBody
-        iconType={answered}
+        iconType={answer}
         text="Kdo jinému jámu kopá, sám do ní padá."
       />
       <div className="question__options">
